@@ -23,7 +23,7 @@ services:
     networks:
       - searxng
     ports:
-     - "8080:8080"
+     - "19723:8080"
     volumes:
       - ./searxng:/etc/searxng:rw
     environment:
@@ -45,6 +45,3 @@ networks:
     ipam:
       driver: default
 
-volumes:
-  caddy-data:
-  caddy-config:
